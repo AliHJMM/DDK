@@ -92,3 +92,6 @@ function generateOffers(products) {
   const limitedOffersContainer = document.querySelector(
     ".limited-offers.container .offers-container"
   );
+  const clearanceSalesContainer = document.querySelector(
+    ".clearance-offers.container .offers-container"
+  );
