@@ -554,3 +554,94 @@
   
   
       <script src="../../images/items.js"></script>
+
+      <br><br>
+
+    <div class="container" id="ServicesSection">
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../../images/cust-service1.png" alt="" class="card-img-top service-img">
+            <div class="card-body">
+              <h5 class="card-title">Customer Services</h5>
+              <p>we love pure customers</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../../images/delivery.png" alt="" class="card-img-top service-img">
+            <div class="card-body">
+              <h5 class="card-title">Delivery</h5>
+              <p>our delivery is the fastest</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../../images/repairs.png" alt="" class="card-img-top service-img">
+            <div class="card-body">
+              <h5 class="card-title">Repairs</h5>
+              <p>We have the best repairs in the world</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <br><br>
+
+
+
+
+    <section class="custom-order">
+      <form id="customForm">
+        <div class="container">
+          <h2 class="section-custom-title">Customize Your Furniture</h2>
+          <div class="row options-container">
+            <div class="col-md-4">
+              <div class="customization-option">
+                <h3 class="option-title">Choose Your Color</h3>
+                <div class="color-palette">
+                  <div class="color-option" style="background-color: #000000;"></div>
+                  <div class="color-option" style="background-color: #db8734;"></div>
+                  <div class="color-option" style="background-color: #a29e3d;"></div>
+                  <div class="color-option" style="background-color: #dbca83;"></div>
+                  <div class="color-option" style="background-color: #d6d69f;"></div>
+                  <div class="color-option" style="background-color: #ffffff;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="customization-option">
+                <h3 class="option-title">Select Material</h3>
+                <select class="custom-dropdown" name="material">
+                  <option value="none">none</option>
+                  <option value="wood">Wood</option>
+                  <option value="marble">Marble</option>
+                  <option value="granite">Granite</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="customization-option">
+                <h3 class="option-title">Select Furniture</h3>
+                <select class="custom-dropdown" name="furniture">
+                  <option value="none">none</option>
+                  <option value="table">Table</option>
+                  <option value="chair">Chair</option>
+                  <option value="cupboard">Cupboard</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <textarea rows="3" placeholder="Order Description.. " class="description form-control"></textarea>
+          <button type="button" class="btn btn-primary custom-btn" onclick="customSubmit()">Submit</button>
+
+          <p>• Your order will undergo a thorough review, and the finalized price details will be promptly sent to your
+            email.</p>
+        </div>
+      </form>
+    </section>
