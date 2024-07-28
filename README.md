@@ -9,3 +9,7 @@ This is a furniture web site for the IS243 "Web Design & Development 1" course a
 
   Technologies used are: HTML, CSS, JS, Bootstarp, and Jquery.
   **that was a fundamental course, so not all functionality is fully implemented**
+
+    ## Usage
+1. Clone the repo or download the zip file
+2. Open the main webpage directly on ur browser.. the path is: (DDK->src->static)
