@@ -197,3 +197,36 @@ const contemporaryDesigns = [
       price: 11436,
     },
   ];
+
+  const transitionalDesigns = [
+    {
+      title: "White Transitional Kitchen",
+      imageSrc: "../../images/whitetrans.webp",
+      price: 8462,
+    },
+    {
+      title: "Open-Concept Transitional Kitchens",
+      imageSrc: "../../images/opencons.webp",
+      price: 11398,
+    },
+    {
+      title: "Transitional Kitchen Lighting",
+      imageSrc: "../../images/tranlgh.webp",
+      price: 7844,
+    },
+    {
+      title: "arch-interior",
+      imageSrc: "../../images/arch-interior.webp",
+      price: 9356,
+    },
+    {
+      title: "The mix Transitional",
+      imageSrc: "../../images/Themix.jpg",
+      price: 7754.63,
+    },
+    {
+      title: "Naturat Transitional Kitchen",
+      imageSrc: "../../images/yiyi.webp",
+      price: 9632,
+    },
+  ];
