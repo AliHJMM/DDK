@@ -95,3 +95,7 @@ function generateOffers(products) {
   const clearanceSalesContainer = document.querySelector(
     ".clearance-offers.container .offers-container"
   );
+  
+bestOffersContainer.innerHTML = generateOffers(bestOffers);
+limitedOffersContainer.innerHTML = generateOffers(limitedOffers);
+clearanceSalesContainer.innerHTML = generateOffers(clearanceSales);
