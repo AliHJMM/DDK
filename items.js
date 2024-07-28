@@ -99,3 +99,35 @@ function generateOffers(products) {
 bestOffersContainer.innerHTML = generateOffers(bestOffers);
 limitedOffersContainer.innerHTML = generateOffers(limitedOffers);
 clearanceSalesContainer.innerHTML = generateOffers(clearanceSales);
+const contemporaryDesigns = [
+    {
+      title: "Embrace California Style",
+      imageSrc: "../../images/california.webp",
+      price: 12099,
+    },
+    {
+      title: "Plant a Tree",
+      imageSrc: "../../images/tree.webp",
+      price: 11999,
+    },
+    {
+      title: "Central",
+      imageSrc: "../../images/central.webp",
+      price: 8999,
+    },
+    {
+      title: "Caroline Andreoni Interior",
+      imageSrc: "../../images/caroline.webp",
+      price: 13967,
+    },
+    {
+      title: "Embrace Minimalism",
+      imageSrc: "../../images/embrace.webp",
+      price: 7985,
+    },
+    {
+      title: "Supersize the Skylight",
+      imageSrc: "../../images/super.webp",
+      price: 10673,
+    },
+  ];
