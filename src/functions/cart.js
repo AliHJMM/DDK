@@ -76,3 +76,23 @@ let total = 0;
         // Append the Checkout button
         appendCheckoutButton();
       }
+      function deleteItem(button) {
+        var itemDiv = $(button).closest('.cart-items');
+        var priceElement = itemDiv.find('strong');
+        var price = parseFloat(priceElement.text());
+        itemDiv.remove();
+  
+        // Update total and apply the discount
+        total -= price;
+        modalFooter.find('strong').text(total);
+        applyDiscount();
+  
+        // Append the Checkout button
+        appendCheckoutButton();
+  
+        // If there are no items left, show 'Your Cart Is Empty' message
+        if ($('.cart-items').length === 0) {
+          modalBody.text('Your Cart Is Empty');
+          modalFooter.html("");
+        }
+      }
