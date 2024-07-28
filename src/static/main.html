@@ -671,3 +671,77 @@
           document.getElementById("customForm").submit();
         }
       </script>
+
+<hr class="division">
+<h3 class="head-title">Our Location</h3>
+
+
+<div id="map"></div>
+<script>
+  function initMap() {
+    let ourLocation = { lat: 26.049254, lng: 50.508515 };
+    let map = new google.maps.Map(document.getElementById("map"), { zoom: 13, center: ourLocation });
+    let marker = new google.maps.Marker({ position: ourLocation, map: map });
+  }
+</script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM6tqn4y_K59YHXyy72FIfIPgWkUWm9z0&callback=initMap"></script>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row row-footer">
+
+      <!-- First Column -->
+      <div class="footer-col col-sm-12 col-md-3">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#ServicesSection">Repairs</a></li>
+          <li><a href="#ServicesSection">Customer services</a></li>
+          <li><a href="#ServicesSection">Delivery & Assembly</a></li>
+        </ul>
+      </div>
+
+      <!-- Second Column -->
+      <div class="footer-col col-sm-12 col-md-3">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">order status</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+
+      <!-- Third Column -->
+      <div class="footer-col col-sm-12 col-md-3">
+        <h4>We Accept</h4>
+        <ul>
+          <li><a><i class="fa-brands fa-cc-visa payment-methods"></i></a></li>
+          <li><a><i class="fa fa-credit-card payment-methods"></i></a></li>
+          <li><a><i class="fa-brands fa-cc-mastercard payment-methods"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- Fourth Column -->
+      <div class="footer-col col-sm-12 col-md-3">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com/Cristiano/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/FCBarcelona"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/leomessi/?hl=en"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="gotopbtn" class="gotopbtn" href="#"><i class="fa-solid fa-angles-up"></i></a>
+<script src="../functions/darkMode.js" defer></script>
+<script src="../functions/cart.js" defer></script>
+<script src="../functions/scroll.js" defer></script>
+<script src="../functions/items.js" defer></script>
+</body>
+
+</html>
