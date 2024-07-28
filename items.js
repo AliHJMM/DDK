@@ -304,3 +304,36 @@ contemporaryContainer.innerHTML =
       price: 613.64,
     },
   ];
+
+  const chairs = [
+    {
+      name: "Wooden Windsor Chairs",
+      imgSrc: "../../images/WoodenWindsor.jpeg",
+      price: 32.33,
+    },
+    {
+      name: "Elegant Tufted Chairs",
+      imgSrc: "../../images/ElegantTufted.jpg",
+      price: 88.75,
+    },
+    {
+      name: "Bentwood Cafe Chairs",
+      imgSrc: "../../images/BentwoodCafeChairs.jpeg",
+      price: 56.96,
+    },
+    {
+      name: "Ladder-back Chairs",
+      imgSrc: "../../images/Ladder-backChairs.jpeg",
+      price: 69.76,
+    },
+    {
+      name: "Eiffel Chairs",
+      imgSrc: "../../images/EiffelChairs.jpeg",
+      price: 101.33,
+    },
+    {
+      name: "Industrial Swivel Stools",
+      imgSrc: "../../images/IndustrialSwivelStools.jpeg",
+      price: 33.64,
+    },
+  ];
