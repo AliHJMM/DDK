@@ -28,3 +28,47 @@
   <link rel="icon" href="../../images/logo.png">
   <title>Dream Designer Kitchen</title>
 </head>
+
+<body>
+    <header>
+
+      <!-- NavBar -->
+      <nav class="navbar navbar-expand-lg  navbar-dark ">
+        <div class="container-fluid">
+
+          <!-- Logo -->
+          <a href="../static/main.html" class="navbar-brand logo"><img src="../../images/logo.png" height="60"></a>
+
+          <a href="#mytoggle" data-bs-toggle="collapse" class="navbar-toggler"><span
+              class="navbar-toggler-icon"></span></a>
+          <div id="mytoggle" class="collapse navbar-collapse">
+            <form class="d-flex ms-auto">
+
+              <!-- Search -->
+              <input class="form-control me-2" placeholder="What are you looking for?">
+              <button class="btn search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                  Kitchen Styles
+                </a>
+
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#ContemporaryDesign">Contemporary</a></li>
+                  <li><a class="dropdown-item" href="#ModernDesign">Modern</a></li>
+                  <li><a class="dropdown-item" href="#TraditionalDesign">Traditional</a></li>
+                  <li><a class="dropdown-item" href="#TransitionalDesign">Transitional</a></li>
+                </ul>
+              </li>
+              <!-- NavBar Extra Elements Login/DarkMode/Cart-->
+              <li class="nav-item"><a class="nav-link"><i class="bi bi-brightness-high-fill" id="toggleDark"></i></a>
+              </li>
+              <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#my-cart-modal"><i
+                    class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
