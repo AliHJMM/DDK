@@ -8,3 +8,9 @@ window.onscroll = function () {
     }
   };
   
+  // Function to scroll to the top when the button is clicked
+  document.getElementById("gotopbtn").onclick = function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+  
