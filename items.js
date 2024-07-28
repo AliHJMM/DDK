@@ -435,3 +435,22 @@ contemporaryContainer.innerHTML =
       price: 8.29,
     },
   ];
+
+  function generateProductCard(product) {
+    return `
+        <div class="col-md-4">
+              <div class="card">
+                <img class="card-img-top img-fluid offers-img" src="${product.imgSrc}" >
+                <div class="card-body">
+                  <h5 class="card-title">${product.name}</h5>
+                  <div class="item-body">
+                    <span>
+                      BHD<strong class="new-price">${product.price}</strong>
+                    </span>
+                    <a class="btn btn-outline-success" onclick="addToCart(this)">Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        `;
+  }
