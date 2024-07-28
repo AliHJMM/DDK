@@ -262,3 +262,6 @@ const transitionalContainer = document.querySelector(".transitional-div");
 contemporaryContainer.innerHTML =
   `<h2 id="ContemporaryDesign">Contemporary Designs</h2>` +
   generateKitchenStyles(contemporaryDesigns);
+  modernContainer.innerHTML =
+  `<h2 id="ModernDesign">Modern Designs</h2>` +
+  generateKitchenStyles(modernDesigns);
