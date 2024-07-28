@@ -1,0 +1,17 @@
+.cart-items {
+    display: flex;
+    justify-content: space-between;
+    border: #292b2c solid 1px;
+    border-radius: 5px;
+    padding: 3px 10px;
+    margin: 10px 5px;
+}
+
+.cart-items a {
+    font-size: 13px;
+}
+
+.cart-total {
+
+    width: 70%;
+}
