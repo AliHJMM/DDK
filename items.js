@@ -454,3 +454,9 @@ contemporaryContainer.innerHTML =
             </div>
         `;
   }
+  function populateContainer(containerId, products) {
+    const container = document.getElementById(containerId);
+    if (container) {
+      container.innerHTML = products.map(generateProductCard).join("");
+    }
+  }
