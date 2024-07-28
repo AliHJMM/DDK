@@ -131,3 +131,36 @@ const contemporaryDesigns = [
       price: 10673,
     },
   ];
+
+  const modernDesigns = [
+    {
+      title: "Galley-style kitchen",
+      imageSrc: "../../images/galley.webp",
+      price: 9694,
+    },
+    {
+      title: "L-shaped kitchen",
+      imageSrc: "../../images/lshaped.webp",
+      price: 8498,
+    },
+    {
+      title: "Two-Tone Cabinetry",
+      imageSrc: "../../images/twotone.webp",
+      price: 10593,
+    },
+    {
+      title: "Andreoni Interior Design",
+      imageSrc: "../../images/andreoni.webp",
+      price: 8433,
+    },
+    {
+      title: "Accent With Gold",
+      imageSrc: "../../images/accent.webp",
+      price: 11846,
+    },
+    {
+      title: "Leanne Ford Interiors",
+      imageSrc: "../../images/leanne.webp",
+      price: 9975,
+    },
+  ];
