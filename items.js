@@ -265,3 +265,6 @@ contemporaryContainer.innerHTML =
   modernContainer.innerHTML =
   `<h2 id="ModernDesign">Modern Designs</h2>` +
   generateKitchenStyles(modernDesigns);
+  traditionalContainer.innerHTML =
+  `<h2 id="TraditionalDesign">Traditional Designs</h2>` +
+  generateKitchenStyles(traditionalDesigns);
