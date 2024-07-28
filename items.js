@@ -337,3 +337,36 @@ contemporaryContainer.innerHTML =
       price: 33.64,
     },
   ];
+
+  const desks = [
+    {
+      name: "Classic Built Desk",
+      imgSrc: "../../images/classic-built.jpeg",
+      price: 161.33,
+    },
+    {
+      name: "Farmhouse Kitchen Desk",
+      imgSrc: "../../images/Farmhouse_Kitchen.jpeg",
+      price: 30.19,
+    },
+    {
+      name: "Blue Kitchen Desk",
+      imgSrc: "../../images/Blue_Kitchen.jpeg",
+      price: 119.51,
+    },
+    {
+      name: "Bamboo Kitchen Desk",
+      imgSrc: "../../images/BambooKitchenDesk.jpeg",
+      price: 250.61,
+    },
+    {
+      name: "Modern Floating Kitchen Desk",
+      imgSrc: "../../images/ModernFloatingKitchenDesk.jpeg",
+      price: 430.55,
+    },
+    {
+      name: "Cottage Kitchen Desk",
+      imgSrc: "../../images/CottageKitchenDesk.jpeg",
+      price: 50.05,
+    },
+  ];
