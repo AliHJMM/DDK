@@ -403,3 +403,35 @@ contemporaryContainer.innerHTML =
       price: 252.96,
     },
   ];
+  const drawers = [
+    {
+      name: "Rolling Cart with Drawers",
+      imgSrc: "../../images/RollingCartwithDrawers.jpeg",
+      price: 17.34,
+    },
+    {
+      name: "Wooden Chest of Drawers",
+      imgSrc: "../../images/WoodenChestofDrawers.jpeg",
+      price: 64.84,
+    },
+    {
+      name: "Under-Bed Storage Drawers",
+      imgSrc: "../../images/Under-BedStorageDrawers.jpeg",
+      price: 27.14,
+    },
+    {
+      name: "File Cabinet Drawers",
+      imgSrc: "../../images/FileCabinetDrawers.jpeg",
+      price: 79.92,
+    },
+    {
+      name: "Kitchen Cabinet Drawers",
+      imgSrc: "../../images/KitchenCabinetDrawers.jpeg",
+      price: 136.47,
+    },
+    {
+      name: "Jewelry Drawer Inserts",
+      imgSrc: "../../images/JewelryDrawerInserts.jpeg",
+      price: 8.29,
+    },
+  ];
