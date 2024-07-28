@@ -1,0 +1,70 @@
+body {
+    background-color: rgba(255, 249, 181, 0.244);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    /* Adjustments for smaller screens */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.logo {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 310px) and (max-height: 560px) {
+    .logo {
+        height: 150px; /* Reduce logo size */
+        margin-bottom: 15px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .login-form {
+        gap: 10px;
+    }
+
+    label, input {
+        font-size: 12px; /* Reduce font size for labels and inputs */
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
