@@ -85,3 +85,7 @@ function generateOffersProducts(product) {
 function generateOffers(products) {
     return products.map(generateOffersProducts).join("");
   }
+
+  const bestOffersContainer = document.querySelector(
+    ".best-offers.container .offers-container"
+  );
