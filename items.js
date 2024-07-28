@@ -271,3 +271,36 @@ contemporaryContainer.innerHTML =
   transitionalContainer.innerHTML =
   `<h2 id="TransitionalDesign">Transitional Designs</h2>` +
   generateKitchenStyles(transitionalDesigns);
+
+  const tables = [
+    {
+      name: "Farmhouse Table",
+      imgSrc: "../../images/Farmhouse.jpg",
+      price: 161.33,
+    },
+    {
+      name: "Glass-Top Table",
+      imgSrc: "../../images/GlassTop.webp",
+      price: 219.75,
+    },
+    {
+      name: "Counter-Height Table",
+      imgSrc: "../../images/CounterHeight.jpg",
+      price: 65.96,
+    },
+    {
+      name: "Extendable Table",
+      imgSrc: "../../images/ExtendableTable.jpeg",
+      price: 98.76,
+    },
+    {
+      name: "Industrial-Style Table",
+      imgSrc: "../../images/Industrial.jpg",
+      price: 187.33,
+    },
+    {
+      name: "Designer Marble Dining Tables",
+      imgSrc: "../../images/DesignerMarbleDiningTables.png",
+      price: 613.64,
+    },
+  ];
