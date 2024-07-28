@@ -56,3 +56,59 @@
             </div>
           </div>
         </div>
+        <div class="col-md-6">
+            <h3 class="title">PAYMENT</h3>
+            <div class="inputBox">
+              <span>accepted cards :</span>
+              <img src="../../images/card_img.png" alt="accpted cards">
+            </div>
+            <div class="inputBox">
+              <span>Card Name :</span>
+              <input type="text" placeholder="Mr. Mohammed Siddique" id="card-name-input" required>
+            </div>
+            <div class="inputBox">
+              <span>credit card no :</span>
+              <input type="text" placeholder="0000-1111-2222-3333" id="card-number-input" required>
+            </div>
+            <div class="inputBox">
+              <span>expire Date :</span>
+              <input type="date" placeholder="02/29" id="date-input" required>
+            </div>
+            <div>
+              <div class="inputBox">
+                <span>CVV :</span>
+                <input type="text" placeholder="225" id="ccv-input" required>
+              </div>
+            </div>
+          </div>
+  
+  
+  
+  
+        </div>
+        <button class="btn btn-success btn-lg" id="proceedBtn" type="button">proceed to checkout</button>
+      </form>
+    </div>
+  
+    <div id="successToast" class="toast hide ">
+      <div class="d-flex">
+        <div class="toast-body ">
+          Payment successful! Thank you.
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="#successToast"></button>
+      </div>
+    </div>
+  
+    <div id="errorToast" class="toast hide ">
+      <div class="d-flex">
+        <div class="toast-body ">
+          Invalid Input, Please Check Your input.
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="#errorToast"
+          aria-label="Close"></button>
+      </div>
+    </div>
+  
+    <div class="spinner-border text-success" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
