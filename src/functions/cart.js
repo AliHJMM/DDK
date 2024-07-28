@@ -96,3 +96,7 @@ let total = 0;
           modalFooter.html("");
         }
       }
+      function appendCheckoutButton() {
+        var checkoutButton = '<a href="payment.html" class="btn btn-success">Checkout</a>';
+        modalFooter.append(checkoutButton);
+      }
