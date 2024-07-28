@@ -230,3 +230,22 @@ const contemporaryDesigns = [
       price: 9632,
     },
   ];
+
+  function generateKitchens(kitchen) {
+    return `
+    <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top img-fluid offers-img" src="${kitchen.imageSrc}" >
+              <div class="card-body">
+                <h5 class="card-title">${kitchen.title}</h5>
+                <div class="item-body">
+                  <span>
+                    BHD<strong class="new-price">${kitchen.price}</strong>
+                  </span>
+                  <a class="btn btn-outline-success" onclick="addToCart(this)">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    `;
+  }
