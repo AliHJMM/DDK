@@ -137,3 +137,38 @@
             "#date-input",
             "#ccv-input"
           ];
+          let isValid = true;
+
+for (const input of inputs) {
+  if (!$(input)[0].validity.valid) {
+    isValid = false;
+    break;
+  }
+}
+
+if (isValid) {
+  $("#successToast").show();
+  $("#errorToast").hide();
+  $(".spinner-border").show();
+  $(".container").hide();
+
+  setTimeout(function () {
+    window.location.href = "main.html";
+  }, 1500)
+
+} else {
+
+
+  $("#errorToast").show();
+  setTimeout(function () {
+    $("#errorToast").hide();
+  }, 3000)
+
+}
+}
+</script>
+
+
+</body>
+
+</html>
