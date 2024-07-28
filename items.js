@@ -18,7 +18,7 @@ const bestOffers = [
       newPrice: "226.39",
     },
   ];
-
+  
   const limitedOffers = [
     {
       name: "Smart Kitchen Upgrade",
@@ -39,7 +39,7 @@ const bestOffers = [
       newPrice: "319.16",
     },
   ];
-
+  
   const clearanceSales = [
     {
       name: "Vintage Kitchen Cabinet Set",
@@ -60,32 +60,33 @@ const bestOffers = [
       newPrice: "924.67",
     },
   ];
-
+  
   let count = 0;
-function generateOffersProducts(product) {
-  count++;
-  return `
-      <div class="col-md-4 lolo">
-        <div class="card">
-          <img class="card-img-top img-fluid offers-img" src="${product.imageSrc}" data-bs-target="#offers-${count}" data-bs-toggle="modal">
-          <div class="card-body">
-            <h5 class="card-title">${product.name}</h5>
-            <div class="item-body">
-              <span>
-                <span class="old-price">${product.oldPrice}</span>
-                BHD<strong class="new-price">${product.newPrice}</strong>
-              </span>
-              <a class="btn btn-outline-success" onclick="addToCart(this)">Add To Cart</a>
+  function generateOffersProducts(product) {
+    count++;
+    return `
+        <div class="col-md-4 lolo">
+          <div class="card">
+            <img class="card-img-top img-fluid offers-img" src="${product.imageSrc}" data-bs-target="#offers-${count}" data-bs-toggle="modal">
+            <div class="card-body">
+              <h5 class="card-title">${product.name}</h5>
+              <div class="item-body">
+                <span>
+                  <span class="old-price">${product.oldPrice}</span>
+                  BHD<strong class="new-price">${product.newPrice}</strong>
+                </span>
+                <a class="btn btn-outline-success" onclick="addToCart(this)">Add To Cart</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    `;
-}
-function generateOffers(products) {
+      `;
+  }
+  
+  function generateOffers(products) {
     return products.map(generateOffersProducts).join("");
   }
-
+  
   const bestOffersContainer = document.querySelector(
     ".best-offers.container .offers-container"
   );
@@ -96,10 +97,11 @@ function generateOffers(products) {
     ".clearance-offers.container .offers-container"
   );
   
-bestOffersContainer.innerHTML = generateOffers(bestOffers);
-limitedOffersContainer.innerHTML = generateOffers(limitedOffers);
-clearanceSalesContainer.innerHTML = generateOffers(clearanceSales);
-const contemporaryDesigns = [
+  bestOffersContainer.innerHTML = generateOffers(bestOffers);
+  limitedOffersContainer.innerHTML = generateOffers(limitedOffers);
+  clearanceSalesContainer.innerHTML = generateOffers(clearanceSales);
+  
+  const contemporaryDesigns = [
     {
       title: "Embrace California Style",
       imageSrc: "../../images/california.webp",
@@ -131,7 +133,7 @@ const contemporaryDesigns = [
       price: 10673,
     },
   ];
-
+  
   const modernDesigns = [
     {
       title: "Galley-style kitchen",
@@ -164,7 +166,7 @@ const contemporaryDesigns = [
       price: 9975,
     },
   ];
-
+  
   const traditionalDesigns = [
     {
       title: "Victorian-era style",
@@ -197,7 +199,7 @@ const contemporaryDesigns = [
       price: 11436,
     },
   ];
-
+  
   const transitionalDesigns = [
     {
       title: "White Transitional Kitchen",
@@ -230,7 +232,7 @@ const contemporaryDesigns = [
       price: 9632,
     },
   ];
-
+  
   function generateKitchens(kitchen) {
     return `
     <div class="col-md-4">
@@ -249,29 +251,29 @@ const contemporaryDesigns = [
           </div>
     `;
   }
-
+  
   function generateKitchenStyles(kitchens) {
     return kitchens.map(generateKitchens).join("");
   }
   
   const contemporaryContainer = document.querySelector(".contemporary-div");
-const modernContainer = document.querySelector(".modern-div");
-const traditionalContainer = document.querySelector(".traditional-div");
-const transitionalContainer = document.querySelector(".transitional-div");
-
-contemporaryContainer.innerHTML =
-  `<h2 id="ContemporaryDesign">Contemporary Designs</h2>` +
-  generateKitchenStyles(contemporaryDesigns);
+  const modernContainer = document.querySelector(".modern-div");
+  const traditionalContainer = document.querySelector(".traditional-div");
+  const transitionalContainer = document.querySelector(".transitional-div");
+  
+  contemporaryContainer.innerHTML =
+    `<h2 id="ContemporaryDesign">Contemporary Designs</h2>` +
+    generateKitchenStyles(contemporaryDesigns);
   modernContainer.innerHTML =
-  `<h2 id="ModernDesign">Modern Designs</h2>` +
-  generateKitchenStyles(modernDesigns);
+    `<h2 id="ModernDesign">Modern Designs</h2>` +
+    generateKitchenStyles(modernDesigns);
   traditionalContainer.innerHTML =
-  `<h2 id="TraditionalDesign">Traditional Designs</h2>` +
-  generateKitchenStyles(traditionalDesigns);
+    `<h2 id="TraditionalDesign">Traditional Designs</h2>` +
+    generateKitchenStyles(traditionalDesigns);
   transitionalContainer.innerHTML =
-  `<h2 id="TransitionalDesign">Transitional Designs</h2>` +
-  generateKitchenStyles(transitionalDesigns);
-
+    `<h2 id="TransitionalDesign">Transitional Designs</h2>` +
+    generateKitchenStyles(transitionalDesigns);
+  
   const tables = [
     {
       name: "Farmhouse Table",
@@ -304,7 +306,7 @@ contemporaryContainer.innerHTML =
       price: 613.64,
     },
   ];
-
+  
   const chairs = [
     {
       name: "Wooden Windsor Chairs",
@@ -337,7 +339,7 @@ contemporaryContainer.innerHTML =
       price: 33.64,
     },
   ];
-
+  
   const desks = [
     {
       name: "Classic Built Desk",
@@ -370,7 +372,7 @@ contemporaryContainer.innerHTML =
       price: 50.05,
     },
   ];
-
+  
   const cabinets = [
     {
       name: "Kitchen Wall Cabinets",
@@ -403,6 +405,7 @@ contemporaryContainer.innerHTML =
       price: 252.96,
     },
   ];
+  
   const drawers = [
     {
       name: "Rolling Cart with Drawers",
@@ -435,7 +438,7 @@ contemporaryContainer.innerHTML =
       price: 8.29,
     },
   ];
-
+  
   function generateProductCard(product) {
     return `
         <div class="col-md-4">
@@ -454,14 +457,17 @@ contemporaryContainer.innerHTML =
             </div>
         `;
   }
+  
   function populateContainer(containerId, products) {
     const container = document.getElementById(containerId);
     if (container) {
       container.innerHTML = products.map(generateProductCard).join("");
     }
   }
+  
   populateContainer("tablesContainer", tables);
-populateContainer("chairsContainer", chairs);
-populateContainer("desksContainer", desks);
-populateContainer("cabinetsContainer", cabinets);
-populateContainer("drawersContainer", drawers);
+  populateContainer("chairsContainer", chairs);
+  populateContainer("desksContainer", desks);
+  populateContainer("cabinetsContainer", cabinets);
+  populateContainer("drawersContainer", drawers);
+  
