@@ -18,7 +18,6 @@ const bestOffers = [
       newPrice: "226.39",
     },
   ];
-  
   const limitedOffers = [
     {
       name: "Smart Kitchen Upgrade",
@@ -39,7 +38,6 @@ const bestOffers = [
       newPrice: "319.16",
     },
   ];
-  
   const clearanceSales = [
     {
       name: "Vintage Kitchen Cabinet Set",
@@ -60,7 +58,6 @@ const bestOffers = [
       newPrice: "924.67",
     },
   ];
-  
   let count = 0;
   function generateOffersProducts(product) {
     count++;
@@ -82,11 +79,9 @@ const bestOffers = [
         </div>
       `;
   }
-  
   function generateOffers(products) {
     return products.map(generateOffersProducts).join("");
   }
-  
   const bestOffersContainer = document.querySelector(
     ".best-offers.container .offers-container"
   );
@@ -96,11 +91,9 @@ const bestOffers = [
   const clearanceSalesContainer = document.querySelector(
     ".clearance-offers.container .offers-container"
   );
-  
   bestOffersContainer.innerHTML = generateOffers(bestOffers);
   limitedOffersContainer.innerHTML = generateOffers(limitedOffers);
   clearanceSalesContainer.innerHTML = generateOffers(clearanceSales);
-  
   const contemporaryDesigns = [
     {
       title: "Embrace California Style",
@@ -133,7 +126,6 @@ const bestOffers = [
       price: 10673,
     },
   ];
-  
   const modernDesigns = [
     {
       title: "Galley-style kitchen",
@@ -166,7 +158,6 @@ const bestOffers = [
       price: 9975,
     },
   ];
-  
   const traditionalDesigns = [
     {
       title: "Victorian-era style",
@@ -199,7 +190,6 @@ const bestOffers = [
       price: 11436,
     },
   ];
-  
   const transitionalDesigns = [
     {
       title: "White Transitional Kitchen",
@@ -232,7 +222,6 @@ const bestOffers = [
       price: 9632,
     },
   ];
-  
   function generateKitchens(kitchen) {
     return `
     <div class="col-md-4">
@@ -251,16 +240,13 @@ const bestOffers = [
           </div>
     `;
   }
-  
   function generateKitchenStyles(kitchens) {
     return kitchens.map(generateKitchens).join("");
   }
-  
   const contemporaryContainer = document.querySelector(".contemporary-div");
   const modernContainer = document.querySelector(".modern-div");
   const traditionalContainer = document.querySelector(".traditional-div");
   const transitionalContainer = document.querySelector(".transitional-div");
-  
   contemporaryContainer.innerHTML =
     `<h2 id="ContemporaryDesign">Contemporary Designs</h2>` +
     generateKitchenStyles(contemporaryDesigns);
@@ -273,7 +259,6 @@ const bestOffers = [
   transitionalContainer.innerHTML =
     `<h2 id="TransitionalDesign">Transitional Designs</h2>` +
     generateKitchenStyles(transitionalDesigns);
-  
   const tables = [
     {
       name: "Farmhouse Table",
@@ -306,7 +291,6 @@ const bestOffers = [
       price: 613.64,
     },
   ];
-  
   const chairs = [
     {
       name: "Wooden Windsor Chairs",
@@ -339,7 +323,6 @@ const bestOffers = [
       price: 33.64,
     },
   ];
-  
   const desks = [
     {
       name: "Classic Built Desk",
@@ -372,7 +355,6 @@ const bestOffers = [
       price: 50.05,
     },
   ];
-  
   const cabinets = [
     {
       name: "Kitchen Wall Cabinets",
@@ -405,7 +387,6 @@ const bestOffers = [
       price: 252.96,
     },
   ];
-  
   const drawers = [
     {
       name: "Rolling Cart with Drawers",
@@ -438,7 +419,6 @@ const bestOffers = [
       price: 8.29,
     },
   ];
-  
   function generateProductCard(product) {
     return `
         <div class="col-md-4">
@@ -457,17 +437,14 @@ const bestOffers = [
             </div>
         `;
   }
-  
   function populateContainer(containerId, products) {
     const container = document.getElementById(containerId);
     if (container) {
       container.innerHTML = products.map(generateProductCard).join("");
     }
   }
-  
   populateContainer("tablesContainer", tables);
   populateContainer("chairsContainer", chairs);
   populateContainer("desksContainer", desks);
   populateContainer("cabinetsContainer", cabinets);
   populateContainer("drawersContainer", drawers);
-  
