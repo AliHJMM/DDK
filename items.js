@@ -258,3 +258,7 @@ const contemporaryDesigns = [
 const modernContainer = document.querySelector(".modern-div");
 const traditionalContainer = document.querySelector(".traditional-div");
 const transitionalContainer = document.querySelector(".transitional-div");
+
+contemporaryContainer.innerHTML =
+  `<h2 id="ContemporaryDesign">Contemporary Designs</h2>` +
+  generateKitchenStyles(contemporaryDesigns);
