@@ -460,3 +460,8 @@ contemporaryContainer.innerHTML =
       container.innerHTML = products.map(generateProductCard).join("");
     }
   }
+  populateContainer("tablesContainer", tables);
+populateContainer("chairsContainer", chairs);
+populateContainer("desksContainer", desks);
+populateContainer("cabinetsContainer", cabinets);
+populateContainer("drawersContainer", drawers);
