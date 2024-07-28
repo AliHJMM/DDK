@@ -18,3 +18,24 @@ const bestOffers = [
       newPrice: "226.39",
     },
   ];
+
+  const limitedOffers = [
+    {
+      name: "Smart Kitchen Upgrade",
+      imageSrc: "../../images/smartbundle.jpg",
+      oldPrice: "BHD1131.94",
+      newPrice: "712.70",
+    },
+    {
+      name: "Luxury Appliance Package",
+      imageSrc: "../../images/lluxxury.webp",
+      oldPrice: "BHD1886.57",
+      newPrice: "1020.60",
+    },
+    {
+      name: "Compact Space-Saving Kitchen Solution",
+      imageSrc: "../../images/space saving.jpg",
+      oldPrice: "BHD679.16",
+      newPrice: "319.16",
+    },
+  ];
