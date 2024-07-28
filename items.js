@@ -249,3 +249,8 @@ const contemporaryDesigns = [
           </div>
     `;
   }
+
+  function generateKitchenStyles(kitchens) {
+    return kitchens.map(generateKitchens).join("");
+  }
+  
