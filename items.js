@@ -82,3 +82,6 @@ function generateOffersProducts(product) {
       </div>
     `;
 }
+function generateOffers(products) {
+    return products.map(generateOffersProducts).join("");
+  }
