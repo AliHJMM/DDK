@@ -21,3 +21,5 @@ This is a furniture web site for the IS243 "Web Design & Development 1" course a
 **pass**: m123  or h123  or a123
 
 (m123 is for mohamed -- h123 is for habib -- a123 is for ali)
+
+## Website Walkthrough
