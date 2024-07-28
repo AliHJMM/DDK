@@ -268,3 +268,6 @@ contemporaryContainer.innerHTML =
   traditionalContainer.innerHTML =
   `<h2 id="TraditionalDesign">Traditional Designs</h2>` +
   generateKitchenStyles(traditionalDesigns);
+  transitionalContainer.innerHTML =
+  `<h2 id="TransitionalDesign">Transitional Designs</h2>` +
+  generateKitchenStyles(transitionalDesigns);
