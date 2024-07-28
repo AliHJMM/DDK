@@ -30,718 +30,752 @@
 </head>
 
 <body>
-    <header>
+  <header>
 
-      <!-- NavBar -->
-      <nav class="navbar navbar-expand-lg  navbar-dark ">
-        <div class="container-fluid">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg  navbar-dark ">
+      <div class="container-fluid">
 
-          <!-- Logo -->
-          <a href="../static/main.html" class="navbar-brand logo"><img src="../../images/logo.png" height="60"></a>
+        <!-- Logo -->
+        <a href="../static/main.html" class="navbar-brand logo"><img src="../../images/logo.png" height="60"></a>
 
-          <a href="#mytoggle" data-bs-toggle="collapse" class="navbar-toggler"><span
-              class="navbar-toggler-icon"></span></a>
-          <div id="mytoggle" class="collapse navbar-collapse">
-            <form class="d-flex ms-auto">
+        <a href="#mytoggle" data-bs-toggle="collapse" class="navbar-toggler"><span
+            class="navbar-toggler-icon"></span></a>
+        <div id="mytoggle" class="collapse navbar-collapse">
+          <form class="d-flex ms-auto">
 
-              <!-- Search -->
-              <input class="form-control me-2" placeholder="What are you looking for?">
-              <button class="btn search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                  Kitchen Styles
-                </a>
+            <!-- Search -->
+            <input class="form-control me-2" placeholder="What are you looking for?">
+            <button class="btn search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Kitchen Styles
+              </a>
 
-                <!-- Dropdown Menu -->
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#ContemporaryDesign">Contemporary</a></li>
-                  <li><a class="dropdown-item" href="#ModernDesign">Modern</a></li>
-                  <li><a class="dropdown-item" href="#TraditionalDesign">Traditional</a></li>
-                  <li><a class="dropdown-item" href="#TransitionalDesign">Transitional</a></li>
-                </ul>
-              </li>
-              <!-- NavBar Extra Elements Login/DarkMode/Cart-->
-              <li class="nav-item"><a class="nav-link"><i class="bi bi-brightness-high-fill" id="toggleDark"></i></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#my-cart-modal"><i
-                    class="fa-solid fa-cart-shopping"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-     <!--Cart Modal-->
-     <div id="my-cart-modal" class="modal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title"> Cart</h5>
-              <button class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body cart-modal-body">Your Cart Is Empty</div>
-            <div class="modal-footer cart-modal-footer">
-            </div>
-          </div>
+              <!-- Dropdown Menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#ContemporaryDesign">Contemporary</a></li>
+                <li><a class="dropdown-item" href="#ModernDesign">Modern</a></li>
+                <li><a class="dropdown-item" href="#TraditionalDesign">Traditional</a></li>
+                <li><a class="dropdown-item" href="#TransitionalDesign">Transitional</a></li>
+              </ul>
+            </li>
+            <!-- NavBar Extra Elements Login/DarkMode/Cart-->
+            <li class="nav-item"><a class="nav-link"><i class="bi bi-brightness-high-fill" id="toggleDark"></i></a>
+            </li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#my-cart-modal"><i
+                  class="fa-solid fa-cart-shopping"></i></a></li>
+          </ul>
         </div>
       </div>
-  
-  
-  
-  
-  
-      <!--modal for offers-->
-      <section class="offers-modal">
-        <div id="offers-1" class="modal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Offers Description</h5>
-                <button class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-              <div class="modal-body">
-                <p class="offers-description">
-                  Get our Cabinet and Countertop Bundle for just 1056 bd ,
-                  Upgrade your kitchen with high-quality cabinets and beautiful
-                  countertops at an unbeatable price.
-                </p>
-              </div>
-              <div class="modal-footer">
-                <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div id="offers-2" class="modal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Offers Description</h5>
-                <button class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-              <div class="modal-body">
-                <p class="offers-description">
-                  Originally priced at 943 bhd, you can now get it for only 754 bhd.
-                  Upgrade your kitchen with sleek and durable stainless steel appliances
-                </p>
-              </div>
-              <div class="modal-footer">
-                <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div id="offers-3" class="modal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Offers Description</h5>
-                <button class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-              <div class="modal-body">
-                <p class="offers-description">
-                  Revamp your dining area with our Modern Table Set,
-                  now at an irresistible price! just 226 bhd.
-                </p>
-              </div>
-              <div class="modal-footer">
-                <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-  
-        <div id="offers-4" class="modal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Offers Description</h5>
-                <button class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-              <div class="modal-body">
-                <p class="offers-description">
-                  Smart Kitchen Upgrade now only 712 bhd!
-                  Elevate your kitchen with the latest smart appliances ... (This offer is only on 29-30 December )
-  
-                </p>
-              </div>
-              <div class="modal-footer">
-                <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div id="offers-5" class="modal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Offers Description</h5>
-                <button class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-              <div class="modal-body">
-                <p class="offers-description">
-                  Luxury Appliance Package only for 1020 bhd !...(This offer is only on the 1st of january)
-                </p>
-              </div>
-              <div class="modal-footer">
-                <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div id="offers-6" class="modal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Offers Description</h5>
-                <button class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-              <div class="modal-body">
-                <p class="offers-description">
-                  Compact Space-Saving Kitchen Solution! you can get it for just 319 bhd ...( Only on the 1st week of
-                  january. )
-                </p>
-              </div>
-              <div class="modal-footer">
-                <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div id="offers-7" class="modal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Offers Description</h5>
-                <button class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-              <div class="modal-body">
-                <p class="offers-description">
-                  Our Vintage Kitchen Cabinet Set is now available at an unbeatable price of just 475 bhd! Don't miss your
-                  chance to bring timeless elegance and vintage charm to your kitchen
-                </p>
-              </div>
-              <div class="modal-footer">
-                <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div id="offers-8" class="modal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Offers Description</h5>
-                <button class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-              <div class="modal-body">
-                <p class="offers-description">
-                  our Stainless Steel Range Hood, now available at a jaw-dropping price of just 139 bhd!!!
-  
-                </p>
-              </div>
-              <div class="modal-footer">
-                <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div id="offers-9" class="modal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Offers Description</h5>
-                <button class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-              <div class="modal-body">
-                <p class="offers-description">
-                  our stunning Transitional Dining Room set, now at an incredible clearance price of just 924 bhd!!
-  
-                </p>
-              </div>
-              <div class="modal-footer">
-                <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-  
-      </section>
-      <!--pop window-->
-    <div id="popupWindow">
-        <button class="btn-close pop-close" id="closeBtn" onclick="closePopup()"></button><br>
-        Spend more than 1000BD to get discounts
-      </div>
-  
-  
-      <!-- Banner -->
-      <div class="sales-banner">
-        <h1 class="exclusive">
-          <strong>Exclusive Offers!</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; Sales Up To 70%
-        </h1>
-        <h1 class="shop-now">
-          Shop Now!
-        </h1>
-      </div>
-  
-  
-      <!-- Discover Images -->
-      <a href="#furniture-section">
-        <div class="container image-container hide-md-and-up">
-          <img src="../../images/discoverposter.png">
-          <img src="../../images/kitchenposter.jpg">
-        </div>
-      </a> <br><br>
-  
-      <!-- Kitchen Styles Section -->
-      <h1 style="text-align: center;" class="head-title">KITCHEN STYLES</h1>
-      <hr style="margin-left: 40px; margin-right: 40px;">
-  
-      <!-- Kitchen Styles Carousel -->
-      <div class="main-carousel">
-        <div id="kitchen-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-          <div class="carousel-inner">
-            <!-- Carousel Item 1 -->
-            <div class="carousel-item active">
-              <a href="#ContemporaryDesign"><img src="../../images/contemporary.jpg" class="d-block w-100"
-                  alt="Contemporary Kitchen"></a>
-              <div class="carousel-caption d-none d-md-block carasoul-image-title">
-                <h4>Contemporary Kitchens</h4>
-              </div>
-            </div>
-  
-            <!-- Carousel Item 2 -->
-            <div class="carousel-item">
-              <a href="#ModernDesign"><img src="../../images/modern.jpg" class="d-block w-100" alt="Modern Kitchen"></a>
-              <div class="carousel-caption d-none d-md-block carasoul-image-title">
-                <h4>Modern Kitchens</h4>
-              </div>
-            </div>
-  
-            <!-- Carousel Item 3 -->
-            <div class="carousel-item">
-              <a href="#TraditionalDesign"><img src="../../images/traditional.jpg" class="d-block w-100"
-                  alt="Traditional Kitchen"></a>
-              <div class="carousel-caption d-none d-md-block carasoul-image-title">
-                <h4>Traditional Kitchens</h4>
-              </div>
-            </div>
-  
-            <!-- Carousel Item 4 -->
-            <div class="carousel-item">
-              <a href="#TransitionalDesign"><img src="../../images/transitionalkittt.jpg" class="d-block w-100"
-                  alt="Transitional Kitchen"></a>
-              <div class="carousel-caption d-none d-md-block carasoul-image-title">
-                <h4>Transitional Kitchens</h4>
-              </div>
-            </div>
-          </div>
-  
-          <!-- Carousel Indicators -->
-          <div class="carousel-indicators">
-            <button data-bs-target="#kitchen-carousel" data-bs-slide-to="0" class="active"></button>
-            <button data-bs-target="#kitchen-carousel" data-bs-slide-to="1"></button>
-            <button data-bs-target="#kitchen-carousel" data-bs-slide-to="2"></button>
-            <button data-bs-target="#kitchen-carousel" data-bs-slide-to="3"></button>
-          </div>
-  
-          <!-- Carousel Previous Button -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#kitchen-carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </button>
-  
-          <!-- Carousel Next Button -->
-          <button class="carousel-control-next" type="button" data-bs-target="#kitchen-carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </button>
-        </div>
-      </div> <br><br><br><br><br>
-  
-       <!-- Main Section -->
-
-    <section class="main-section">
-        <div class="best-offers container">
-          <h1 class="head-title">Best Offers</h1>
-          <div class="offers-container row">
-            <!--  product cards will be inserted here using JavaScript -->
-          </div>
-          <hr class="division">
-        </div>
-  
-        <div class="limited-offers container">
-          <h1 class="head-title">Limited Offers</h1>
-          <div class="offers-container row">
-            <!--  product cards will be inserted here using JavaScript -->
-          </div>
-          <hr class="division">
-        </div>
-  
-        <div class="clearance-offers container">
-          <h1 class="head-title">Clearance Sales</h1>
-          <div class="offers-container row">
-            <!--  product cards will be inserted here using JavaScript -->
-          </div>
-        </div>
-      </section>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      <br><br>
-      <hr class="division">
-  
-      <!-- Furniture Container -->
-      <div class="Kitchen-furniture container" id="furniture-section">
-  
-        <!-- Title -->
-        <div>
-          <h1 class="kitchen-title">Kitchen Furnitures</h1>
-        </div><br><br><br>
-        <div class="row">
-  
-          <!-- Box 1 -->
-          <div class="col-md-4">
-            <h3 class="Furniture-group">Tables</h3>
-            <a href="#tables"><img src="../../images/tables.jpg" class="d-block w-100 furniturelink" alt="Modern Kitchen"></a>
-          </div>
-  
-          <!-- Box 2 -->
-          <div class="col-md-4">
-            <a href="#desks"><img src="../../images/desks.jpg" class="d-block w-100 furniturelink" alt="Modern Kitchen"></a>
-            <h3 class="Furniture-group">Desks</h3>
-          </div>
-  
-          <!-- Box 3 -->
-          <div class="col-md-4">
-            <h3 class="Furniture-group">Chairs</h3>
-            <a href="#chairs"><img src="../../images/chairs.jpg" class="d-block w-100 furniturelink" alt="Modern Kitchen"></a>
-          </div>
-        </div><br>
-  
-  
-        <div class="row">
-  
-          <!-- Box 4 -->
-          <div class="col-md-6">
-            <h3 class="Furniture-group">Storage Drawers</h3>
-            <a href="#drawers"><img src="../../images/storage drawer.jpg" class="d-block w-100 furniturelink"
-                alt="Modern Kitchen"></a>
-          </div>
-  
-          <!-- Box 5 -->
-          <div class="col-md-6">
-            <h3 class="Furniture-group">Cabinets & Cupboards</h3>
-            <a href="#cabinets"><img src="../../images/cabinets.avif" class="d-block w-100 furniturelink" alt="Modern Kitchen"></a>
-          </div>
-        </div>
-      </div> <br><br>
-  
-      <div class="container kit-styles">
-        <h1>Our Full Kitchen Designs</h1><br>
-        <div class="row contemporary-div">
-  
-        </div><br><br>
-        <div class="row modern-div">
-  
-        </div><br><br>
-        <div class="row traditional-div">
-  
-        </div><br><br>
-        <div class="row transitional-div">
-  
-        </div><br><br>
-      </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      <section class="main-section">
-        <div class="tables container" id="tables">
-          <h1 class="head-title">Tables</h1>
-          <div class="offers-container row" id="tablesContainer">
-          </div>
-          <hr class="division">
-        </div>
-  
-        <div class="chairs container" id="chairs">
-          <h1 class="head-title">Chairs</h1>
-          <div class="offers-container row" id="chairsContainer">
-          </div>
-          <hr class="division">
-        </div>
-  
-        <div class="desks container" id="desks">
-          <h1 class="head-title">Desks</h1>
-          <div class="offers-container row" id="desksContainer">
-          </div>
-          <hr class="division">
-        </div>
-  
-        <div class="cabinets container" id="cabinets">
-          <h1 class="head-title">Cabinets</h1>
-          <div class="offers-container row" id="cabinetsContainer">
-          </div>
-          <hr class="division">
-        </div>
-  
-        <div class="drawers container" id="drawers">
-          <h1 class="head-title">Drawers</h1>
-          <div class="offers-container row" id="drawersContainer">
-          </div>
-        </div>
-      </section>
-  
-  
-  
-  
-      <script src="../../images/items.js"></script>
-
-      <br><br>
-
-    <div class="container" id="ServicesSection">
-      <div class="row">
-
-        <div class="col-md-4">
-          <div class="card">
-            <img src="../../images/cust-service1.png" alt="" class="card-img-top service-img">
-            <div class="card-body">
-              <h5 class="card-title">Customer Services</h5>
-              <p>we love pure customers</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="../../images/delivery.png" alt="" class="card-img-top service-img">
-            <div class="card-body">
-              <h5 class="card-title">Delivery</h5>
-              <p>our delivery is the fastest</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="../../images/repairs.png" alt="" class="card-img-top service-img">
-            <div class="card-body">
-              <h5 class="card-title">Repairs</h5>
-              <p>We have the best repairs in the world</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> <br><br>
+    </nav>
+  </header>
 
 
-
-
-    <section class="custom-order">
-      <form id="customForm">
-        <div class="container">
-          <h2 class="section-custom-title">Customize Your Furniture</h2>
-          <div class="row options-container">
-            <div class="col-md-4">
-              <div class="customization-option">
-                <h3 class="option-title">Choose Your Color</h3>
-                <div class="color-palette">
-                  <div class="color-option" style="background-color: #000000;"></div>
-                  <div class="color-option" style="background-color: #db8734;"></div>
-                  <div class="color-option" style="background-color: #a29e3d;"></div>
-                  <div class="color-option" style="background-color: #dbca83;"></div>
-                  <div class="color-option" style="background-color: #d6d69f;"></div>
-                  <div class="color-option" style="background-color: #ffffff;"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="customization-option">
-                <h3 class="option-title">Select Material</h3>
-                <select class="custom-dropdown" name="material">
-                  <option value="none">none</option>
-                  <option value="wood">Wood</option>
-                  <option value="marble">Marble</option>
-                  <option value="granite">Granite</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="customization-option">
-                <h3 class="option-title">Select Furniture</h3>
-                <select class="custom-dropdown" name="furniture">
-                  <option value="none">none</option>
-                  <option value="table">Table</option>
-                  <option value="chair">Chair</option>
-                  <option value="cupboard">Cupboard</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <textarea rows="3" placeholder="Order Description.. " class="description form-control"></textarea>
-          <button type="button" class="btn btn-primary custom-btn" onclick="customSubmit()">Submit</button>
-
-          <p>• Your order will undergo a thorough review, and the finalized price details will be promptly sent to your
-            email.</p>
+  <!--Cart Modal-->
+  <div id="my-cart-modal" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"> Cart</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
         </div>
-      </form>
-    </section>
-
-    <script>
-        isColorSelected = false;
-        $(document).ready(function () {
-          $(".color-option").click(function () {
-            isColorSelected = true;
-            $(".color-option").css("border", "none");
-            $(this).css("border", "3px solid #007bff");
-          });
-        });
-  
-        function customSubmit() {
-          var description = $(".description").val().trim();
-          var materialSelected = $(".custom-dropdown[name='material']").val();
-          var furnitureSelected = $(".custom-dropdown[name='furniture']").val();
-  
-          if (description == "" || !isColorSelected || materialSelected == "none" || furnitureSelected == "none") {
-            alert("Please complete all customization options and provide additional notes.");
-            return;
-          }
-          alert("Your Order has been submitted successfully!\n We will review your oredr soon");
-          $(".color-option").css("border", "none");
-          isColorSelected = false;
-          document.getElementById("customForm").submit();
-        }
-      </script>
-
-<hr class="division">
-<h3 class="head-title">Our Location</h3>
-
-
-<div id="map"></div>
-<script>
-  function initMap() {
-    let ourLocation = { lat: 26.049254, lng: 50.508515 };
-    let map = new google.maps.Map(document.getElementById("map"), { zoom: 13, center: ourLocation });
-    let marker = new google.maps.Marker({ position: ourLocation, map: map });
-  }
-</script>
-<script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM6tqn4y_K59YHXyy72FIfIPgWkUWm9z0&callback=initMap"></script>
-
-
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="row row-footer">
-
-      <!-- First Column -->
-      <div class="footer-col col-sm-12 col-md-3">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#ServicesSection">Repairs</a></li>
-          <li><a href="#ServicesSection">Customer services</a></li>
-          <li><a href="#ServicesSection">Delivery & Assembly</a></li>
-        </ul>
-      </div>
-
-      <!-- Second Column -->
-      <div class="footer-col col-sm-12 col-md-3">
-        <h4>get help</h4>
-        <ul>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">order status</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
-      </div>
-
-      <!-- Third Column -->
-      <div class="footer-col col-sm-12 col-md-3">
-        <h4>We Accept</h4>
-        <ul>
-          <li><a><i class="fa-brands fa-cc-visa payment-methods"></i></a></li>
-          <li><a><i class="fa fa-credit-card payment-methods"></i></a></li>
-          <li><a><i class="fa-brands fa-cc-mastercard payment-methods"></i></a></li>
-        </ul>
-      </div>
-
-      <!-- Fourth Column -->
-      <div class="footer-col col-sm-12 col-md-3">
-        <h4>follow us</h4>
-        <div class="social-links">
-          <a href="https://www.facebook.com/Cristiano/"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://twitter.com/FCBarcelona"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com/leomessi/?hl=en"><i class="fab fa-instagram"></i></a>
+        <div class="modal-body cart-modal-body">Your Cart Is Empty</div>
+        <div class="modal-footer cart-modal-footer">
         </div>
       </div>
     </div>
   </div>
-</footer>
 
-<a id="gotopbtn" class="gotopbtn" href="#"><i class="fa-solid fa-angles-up"></i></a>
-<script src="../functions/darkMode.js" defer></script>
-<script src="../functions/cart.js" defer></script>
-<script src="../functions/scroll.js" defer></script>
-<script src="../functions/items.js" defer></script>
+
+
+
+
+  <!--modal for offers-->
+  <section class="offers-modal">
+    <div id="offers-1" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Offers Description</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="offers-description">
+              Get our Cabinet and Countertop Bundle for just 1056 bd ,
+              Upgrade your kitchen with high-quality cabinets and beautiful
+              countertops at an unbeatable price.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="offers-2" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Offers Description</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="offers-description">
+              Originally priced at 943 bhd, you can now get it for only 754 bhd.
+              Upgrade your kitchen with sleek and durable stainless steel appliances
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="offers-3" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Offers Description</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="offers-description">
+              Revamp your dining area with our Modern Table Set,
+              now at an irresistible price! just 226 bhd.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="offers-4" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Offers Description</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="offers-description">
+              Smart Kitchen Upgrade now only 712 bhd!
+              Elevate your kitchen with the latest smart appliances ... (This offer is only on 29-30 December )
+
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="offers-5" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Offers Description</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="offers-description">
+              Luxury Appliance Package only for 1020 bhd !...(This offer is only on the 1st of january)
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="offers-6" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Offers Description</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="offers-description">
+              Compact Space-Saving Kitchen Solution! you can get it for just 319 bhd ...( Only on the 1st week of
+              january. )
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="offers-7" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Offers Description</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="offers-description">
+              Our Vintage Kitchen Cabinet Set is now available at an unbeatable price of just 475 bhd! Don't miss your
+              chance to bring timeless elegance and vintage charm to your kitchen
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="offers-8" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Offers Description</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="offers-description">
+              our Stainless Steel Range Hood, now available at a jaw-dropping price of just 139 bhd!!!
+
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="offers-9" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Offers Description</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="offers-description">
+              our stunning Transitional Dining Room set, now at an incredible clearance price of just 924 bhd!!
+
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+  <!--pop window-->
+  <div id="popupWindow">
+    <button class="btn-close pop-close" id="closeBtn" onclick="closePopup()"></button><br>
+    Spend more than 1000BD to get discounts
+  </div>
+
+
+  <!-- Banner -->
+  <div class="sales-banner">
+    <h1 class="exclusive">
+      <strong>Exclusive Offers!</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; Sales Up To 70%
+    </h1>
+    <h1 class="shop-now">
+      Shop Now!
+    </h1>
+  </div>
+
+
+  <!-- Discover Images -->
+  <a href="#furniture-section">
+    <div class="container image-container hide-md-and-up">
+      <img src="../../images/discoverposter.png">
+      <img src="../../images/kitchenposter.jpg">
+    </div>
+  </a> <br><br>
+
+  <!-- Kitchen Styles Section -->
+  <h1 style="text-align: center;" class="head-title">KITCHEN STYLES</h1>
+  <hr style="margin-left: 40px; margin-right: 40px;">
+
+  <!-- Kitchen Styles Carousel -->
+  <div class="main-carousel">
+    <div id="kitchen-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <!-- Carousel Item 1 -->
+        <div class="carousel-item active">
+          <a href="#ContemporaryDesign"><img src="../../images/contemporary.jpg" class="d-block w-100"
+              alt="Contemporary Kitchen"></a>
+          <div class="carousel-caption d-none d-md-block carasoul-image-title">
+            <h4>Contemporary Kitchens</h4>
+          </div>
+        </div>
+
+        <!-- Carousel Item 2 -->
+        <div class="carousel-item">
+          <a href="#ModernDesign"><img src="../../images/modern.jpg" class="d-block w-100" alt="Modern Kitchen"></a>
+          <div class="carousel-caption d-none d-md-block carasoul-image-title">
+            <h4>Modern Kitchens</h4>
+          </div>
+        </div>
+
+        <!-- Carousel Item 3 -->
+        <div class="carousel-item">
+          <a href="#TraditionalDesign"><img src="../../images/traditional.jpg" class="d-block w-100"
+              alt="Traditional Kitchen"></a>
+          <div class="carousel-caption d-none d-md-block carasoul-image-title">
+            <h4>Traditional Kitchens</h4>
+          </div>
+        </div>
+
+        <!-- Carousel Item 4 -->
+        <div class="carousel-item">
+          <a href="#TransitionalDesign"><img src="../../images/transitionalkittt.jpg" class="d-block w-100"
+              alt="Transitional Kitchen"></a>
+          <div class="carousel-caption d-none d-md-block carasoul-image-title">
+            <h4>Transitional Kitchens</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Indicators -->
+      <div class="carousel-indicators">
+        <button data-bs-target="#kitchen-carousel" data-bs-slide-to="0" class="active"></button>
+        <button data-bs-target="#kitchen-carousel" data-bs-slide-to="1"></button>
+        <button data-bs-target="#kitchen-carousel" data-bs-slide-to="2"></button>
+        <button data-bs-target="#kitchen-carousel" data-bs-slide-to="3"></button>
+      </div>
+
+      <!-- Carousel Previous Button -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#kitchen-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+
+      <!-- Carousel Next Button -->
+      <button class="carousel-control-next" type="button" data-bs-target="#kitchen-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div> <br><br><br><br><br>
+
+
+
+
+
+  <!-- Main Section -->
+
+  <section class="main-section">
+    <div class="best-offers container">
+      <h1 class="head-title">Best Offers</h1>
+      <div class="offers-container row">
+        <!--  product cards will be inserted here using JavaScript -->
+      </div>
+      <hr class="division">
+    </div>
+
+    <div class="limited-offers container">
+      <h1 class="head-title">Limited Offers</h1>
+      <div class="offers-container row">
+        <!--  product cards will be inserted here using JavaScript -->
+      </div>
+      <hr class="division">
+    </div>
+
+    <div class="clearance-offers container">
+      <h1 class="head-title">Clearance Sales</h1>
+      <div class="offers-container row">
+        <!--  product cards will be inserted here using JavaScript -->
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br><br>
+  <hr class="division">
+
+  <!-- Furniture Container -->
+  <div class="Kitchen-furniture container" id="furniture-section">
+
+    <!-- Title -->
+    <div>
+      <h1 class="kitchen-title">Kitchen Furnitures</h1>
+    </div><br><br><br>
+    <div class="row">
+
+      <!-- Box 1 -->
+      <div class="col-md-4">
+        <h3 class="Furniture-group">Tables</h3>
+        <a href="#tables"><img src="../../images/tables.jpg" class="d-block w-100 furniturelink" alt="Modern Kitchen"></a>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="col-md-4">
+        <a href="#desks"><img src="../../images/desks.jpg" class="d-block w-100 furniturelink" alt="Modern Kitchen"></a>
+        <h3 class="Furniture-group">Desks</h3>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="col-md-4">
+        <h3 class="Furniture-group">Chairs</h3>
+        <a href="#chairs"><img src="../../images/chairs.jpg" class="d-block w-100 furniturelink" alt="Modern Kitchen"></a>
+      </div>
+    </div><br>
+
+
+    <div class="row">
+
+      <!-- Box 4 -->
+      <div class="col-md-6">
+        <h3 class="Furniture-group">Storage Drawers</h3>
+        <a href="#drawers"><img src="../../images/storage drawer.jpg" class="d-block w-100 furniturelink"
+            alt="Modern Kitchen"></a>
+      </div>
+
+      <!-- Box 5 -->
+      <div class="col-md-6">
+        <h3 class="Furniture-group">Cabinets & Cupboards</h3>
+        <a href="#cabinets"><img src="../../images/cabinets.avif" class="d-block w-100 furniturelink" alt="Modern Kitchen"></a>
+      </div>
+    </div>
+  </div> <br><br>
+
+
+
+
+
+
+
+
+  <div class="container kit-styles">
+    <h1>Our Full Kitchen Designs</h1><br>
+    <div class="row contemporary-div">
+
+    </div><br><br>
+    <div class="row modern-div">
+
+    </div><br><br>
+    <div class="row traditional-div">
+
+    </div><br><br>
+    <div class="row transitional-div">
+
+    </div><br><br>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="main-section">
+    <div class="tables container" id="tables">
+      <h1 class="head-title">Tables</h1>
+      <div class="offers-container row" id="tablesContainer">
+      </div>
+      <hr class="division">
+    </div>
+
+    <div class="chairs container" id="chairs">
+      <h1 class="head-title">Chairs</h1>
+      <div class="offers-container row" id="chairsContainer">
+      </div>
+      <hr class="division">
+    </div>
+
+    <div class="desks container" id="desks">
+      <h1 class="head-title">Desks</h1>
+      <div class="offers-container row" id="desksContainer">
+      </div>
+      <hr class="division">
+    </div>
+
+    <div class="cabinets container" id="cabinets">
+      <h1 class="head-title">Cabinets</h1>
+      <div class="offers-container row" id="cabinetsContainer">
+      </div>
+      <hr class="division">
+    </div>
+
+    <div class="drawers container" id="drawers">
+      <h1 class="head-title">Drawers</h1>
+      <div class="offers-container row" id="drawersContainer">
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script src="../../images/items.js"></script>
+
+
+
+
+
+
+
+
+  <br><br>
+
+  <div class="container" id="ServicesSection">
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="../../images/cust-service1.png" alt="" class="card-img-top service-img">
+          <div class="card-body">
+            <h5 class="card-title">Customer Services</h5>
+            <p>we love pure customers</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="../../images/delivery.png" alt="" class="card-img-top service-img">
+          <div class="card-body">
+            <h5 class="card-title">Delivery</h5>
+            <p>our delivery is the fastest</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="../../images/repairs.png" alt="" class="card-img-top service-img">
+          <div class="card-body">
+            <h5 class="card-title">Repairs</h5>
+            <p>We have the best repairs in the world</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <br><br>
+
+
+
+
+  <section class="custom-order">
+    <form id="customForm">
+      <div class="container">
+        <h2 class="section-custom-title">Customize Your Furniture</h2>
+        <div class="row options-container">
+          <div class="col-md-4">
+            <div class="customization-option">
+              <h3 class="option-title">Choose Your Color</h3>
+              <div class="color-palette">
+                <div class="color-option" style="background-color: #000000;"></div>
+                <div class="color-option" style="background-color: #db8734;"></div>
+                <div class="color-option" style="background-color: #a29e3d;"></div>
+                <div class="color-option" style="background-color: #dbca83;"></div>
+                <div class="color-option" style="background-color: #d6d69f;"></div>
+                <div class="color-option" style="background-color: #ffffff;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="customization-option">
+              <h3 class="option-title">Select Material</h3>
+              <select class="custom-dropdown" name="material">
+                <option value="none">none</option>
+                <option value="wood">Wood</option>
+                <option value="marble">Marble</option>
+                <option value="granite">Granite</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="customization-option">
+              <h3 class="option-title">Select Furniture</h3>
+              <select class="custom-dropdown" name="furniture">
+                <option value="none">none</option>
+                <option value="table">Table</option>
+                <option value="chair">Chair</option>
+                <option value="cupboard">Cupboard</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <textarea rows="3" placeholder="Order Description.. " class="description form-control"></textarea>
+        <button type="button" class="btn btn-primary custom-btn" onclick="customSubmit()">Submit</button>
+
+        <p>• Your order will undergo a thorough review, and the finalized price details will be promptly sent to your
+          email.</p>
+      </div>
+    </form>
+  </section>
+
+  <script>
+    isColorSelected = false;
+    $(document).ready(function () {
+      $(".color-option").click(function () {
+        isColorSelected = true;
+        $(".color-option").css("border", "none");
+        $(this).css("border", "3px solid #007bff");
+      });
+    });
+
+    function customSubmit() {
+      var description = $(".description").val().trim();
+      var materialSelected = $(".custom-dropdown[name='material']").val();
+      var furnitureSelected = $(".custom-dropdown[name='furniture']").val();
+
+      if (description == "" || !isColorSelected || materialSelected == "none" || furnitureSelected == "none") {
+        alert("Please complete all customization options and provide additional notes.");
+        return;
+      }
+      alert("Your Order has been submitted successfully!\n We will review your oredr soon");
+      $(".color-option").css("border", "none");
+      isColorSelected = false;
+      document.getElementById("customForm").submit();
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <hr class="division">
+  <h3 class="head-title">Our Location</h3>
+
+
+  <div id="map"></div>
+  <script>
+    function initMap() {
+      let ourLocation = { lat: 26.049254, lng: 50.508515 };
+      let map = new google.maps.Map(document.getElementById("map"), { zoom: 13, center: ourLocation });
+      let marker = new google.maps.Marker({ position: ourLocation, map: map });
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM6tqn4y_K59YHXyy72FIfIPgWkUWm9z0&callback=initMap"></script>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row row-footer">
+
+        <!-- First Column -->
+        <div class="footer-col col-sm-12 col-md-3">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#ServicesSection">Repairs</a></li>
+            <li><a href="#ServicesSection">Customer services</a></li>
+            <li><a href="#ServicesSection">Delivery & Assembly</a></li>
+          </ul>
+        </div>
+
+        <!-- Second Column -->
+        <div class="footer-col col-sm-12 col-md-3">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+
+        <!-- Third Column -->
+        <div class="footer-col col-sm-12 col-md-3">
+          <h4>We Accept</h4>
+          <ul>
+            <li><a><i class="fa-brands fa-cc-visa payment-methods"></i></a></li>
+            <li><a><i class="fa fa-credit-card payment-methods"></i></a></li>
+            <li><a><i class="fa-brands fa-cc-mastercard payment-methods"></i></a></li>
+          </ul>
+        </div>
+
+        <!-- Fourth Column -->
+        <div class="footer-col col-sm-12 col-md-3">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/Cristiano/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/FCBarcelona"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/leomessi/?hl=en"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a id="gotopbtn" class="gotopbtn" href="#"><i class="fa-solid fa-angles-up"></i></a>
+  <script src="../functions/darkMode.js" defer></script>
+  <script src="../functions/cart.js" defer></script>
+  <script src="../functions/scroll.js" defer></script>
+  <script src="../functions/items.js" defer></script>
 </body>
 
 </html>
