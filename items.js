@@ -164,3 +164,36 @@ const contemporaryDesigns = [
       price: 9975,
     },
   ];
+
+  const traditionalDesigns = [
+    {
+      title: "Victorian-era style",
+      imageSrc: "../../images/victoria.webp",
+      price: 10734,
+    },
+    {
+      title: "Bright White Traditional Kitchen",
+      imageSrc: "../../images/white.webp",
+      price: 11573,
+    },
+    {
+      title: "Traditional Lighting",
+      imageSrc: "../../images/tradi.webp",
+      price: 11854,
+    },
+    {
+      title: "Glass-Front Kitchen",
+      imageSrc: "../../images/glass.webp",
+      price: 8538,
+    },
+    {
+      title: "the Outside In",
+      imageSrc: "../../images/outside.webp",
+      price: 12788,
+    },
+    {
+      title: "Farmhouse Kitchen Island",
+      imageSrc: "../../images/farmhouse.webp",
+      price: 11436,
+    },
+  ];
