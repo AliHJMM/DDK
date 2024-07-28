@@ -645,3 +645,29 @@
         </div>
       </form>
     </section>
+
+    <script>
+        isColorSelected = false;
+        $(document).ready(function () {
+          $(".color-option").click(function () {
+            isColorSelected = true;
+            $(".color-option").css("border", "none");
+            $(this).css("border", "3px solid #007bff");
+          });
+        });
+  
+        function customSubmit() {
+          var description = $(".description").val().trim();
+          var materialSelected = $(".custom-dropdown[name='material']").val();
+          var furnitureSelected = $(".custom-dropdown[name='furniture']").val();
+  
+          if (description == "" || !isColorSelected || materialSelected == "none" || furnitureSelected == "none") {
+            alert("Please complete all customization options and provide additional notes.");
+            return;
+          }
+          alert("Your Order has been submitted successfully!\n We will review your oredr soon");
+          $(".color-option").css("border", "none");
+          isColorSelected = false;
+          document.getElementById("customForm").submit();
+        }
+      </script>
