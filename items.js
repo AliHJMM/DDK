@@ -370,3 +370,36 @@ contemporaryContainer.innerHTML =
       price: 50.05,
     },
   ];
+
+  const cabinets = [
+    {
+      name: "Kitchen Wall Cabinets",
+      imgSrc: "../../images/kitchenwallcabinets.jpeg",
+      price: 81.05,
+    },
+    {
+      name: "Base Cabinets",
+      imgSrc: "../../images/BaseCabinets.jpeg",
+      price: 132.32,
+    },
+    {
+      name: "Pantry Cabinets",
+      imgSrc: "../../images/PantryCabinets.jpeg",
+      price: 161.73,
+    },
+    {
+      name: "Bathroom Vanities",
+      imgSrc: "../../images/BathroomVanities.jpeg",
+      price: 648.81,
+    },
+    {
+      name: "Media Cabinets",
+      imgSrc: "../../images/MediaCabinets.jpeg",
+      price: 211.49,
+    },
+    {
+      name: "Linen Cabinets",
+      imgSrc: "../../images/LinenCabinets.jpeg",
+      price: 252.96,
+    },
+  ];
