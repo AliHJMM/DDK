@@ -35,3 +35,44 @@ let total = 0;
         // Append the discount information to the existing modalFooter
         modalFooter.html(discountElements);
       }
+      function addToCart(button) {
+        var cardBody = $(button).closest('.card-body');
+        var newPriceElement = cardBody.find('.item-body').find(".new-price");
+        var price = parseFloat(newPriceElement.text().trim());
+        var name = cardBody.find(".card-title").text().trim();
+        total += price;
+        alert("Item added to cart.");
+  
+        if (modalBody.text().trim() === 'Your Cart Is Empty') {
+          modalBody.empty();
+        }
+  
+        var itemDiv = `
+          <div class="cart-items">
+            <span>${name}</span>
+            <span>
+              <strong>${price.toFixed(2)} BHD</strong>
+              <button class="btn-close delete-item" onclick="deleteItem(this)"></button>
+            </span>
+          </div>
+        `;
+  
+        var totalDiv = `
+          <div class="cart-total">
+            <span>Total before discount:</span>
+            <span>
+              <h6><strong>${total.toFixed(2)} BHD</strong></h6>
+            </span>
+          </div>
+        `;
+  
+        // Append the item to the modalBody
+        modalBody.append(itemDiv);
+  
+        // Update the total and apply the discount
+        modalFooter.html(totalDiv);
+        applyDiscount();
+  
+        // Append the Checkout button
+        appendCheckoutButton();
+      }
