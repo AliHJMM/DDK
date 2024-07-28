@@ -60,3 +60,25 @@ const bestOffers = [
       newPrice: "924.67",
     },
   ];
+
+  let count = 0;
+function generateOffersProducts(product) {
+  count++;
+  return `
+      <div class="col-md-4 lolo">
+        <div class="card">
+          <img class="card-img-top img-fluid offers-img" src="${product.imageSrc}" data-bs-target="#offers-${count}" data-bs-toggle="modal">
+          <div class="card-body">
+            <h5 class="card-title">${product.name}</h5>
+            <div class="item-body">
+              <span>
+                <span class="old-price">${product.oldPrice}</span>
+                BHD<strong class="new-price">${product.newPrice}</strong>
+              </span>
+              <a class="btn btn-outline-success" onclick="addToCart(this)">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+}
