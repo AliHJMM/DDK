@@ -254,3 +254,7 @@ const contemporaryDesigns = [
     return kitchens.map(generateKitchens).join("");
   }
   
+  const contemporaryContainer = document.querySelector(".contemporary-div");
+const modernContainer = document.querySelector(".modern-div");
+const traditionalContainer = document.querySelector(".traditional-div");
+const transitionalContainer = document.querySelector(".transitional-div");
