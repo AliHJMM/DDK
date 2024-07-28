@@ -56,117 +56,126 @@
             </div>
           </div>
         </div>
+
+
+
+
+
+
         <div class="col-md-6">
-            <h3 class="title">PAYMENT</h3>
+          <h3 class="title">PAYMENT</h3>
+          <div class="inputBox">
+            <span>accepted cards :</span>
+            <img src="../../images/card_img.png" alt="accpted cards">
+          </div>
+          <div class="inputBox">
+            <span>Card Name :</span>
+            <input type="text" placeholder="Mr. Mohammed Siddique" id="card-name-input" required>
+          </div>
+          <div class="inputBox">
+            <span>credit card no :</span>
+            <input type="text" placeholder="0000-1111-2222-3333" id="card-number-input" required>
+          </div>
+          <div class="inputBox">
+            <span>expire Date :</span>
+            <input type="date" placeholder="02/29" id="date-input" required>
+          </div>
+          <div>
             <div class="inputBox">
-              <span>accepted cards :</span>
-              <img src="../../images/card_img.png" alt="accpted cards">
-            </div>
-            <div class="inputBox">
-              <span>Card Name :</span>
-              <input type="text" placeholder="Mr. Mohammed Siddique" id="card-name-input" required>
-            </div>
-            <div class="inputBox">
-              <span>credit card no :</span>
-              <input type="text" placeholder="0000-1111-2222-3333" id="card-number-input" required>
-            </div>
-            <div class="inputBox">
-              <span>expire Date :</span>
-              <input type="date" placeholder="02/29" id="date-input" required>
-            </div>
-            <div>
-              <div class="inputBox">
-                <span>CVV :</span>
-                <input type="text" placeholder="225" id="ccv-input" required>
-              </div>
+              <span>CVV :</span>
+              <input type="text" placeholder="225" id="ccv-input" required>
             </div>
           </div>
-  
-  
-  
-  
         </div>
-        <button class="btn btn-success btn-lg" id="proceedBtn" type="button">proceed to checkout</button>
-      </form>
-    </div>
-  
-    <div id="successToast" class="toast hide ">
-      <div class="d-flex">
-        <div class="toast-body ">
-          Payment successful! Thank you.
-        </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="#successToast"></button>
+
+
+
+
       </div>
-    </div>
-  
-    <div id="errorToast" class="toast hide ">
-      <div class="d-flex">
-        <div class="toast-body ">
-          Invalid Input, Please Check Your input.
-        </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="#errorToast"
-          aria-label="Close"></button>
+      <button class="btn btn-success btn-lg" id="proceedBtn" type="button">proceed to checkout</button>
+    </form>
+  </div>
+
+  <div id="successToast" class="toast hide ">
+    <div class="d-flex">
+      <div class="toast-body ">
+        Payment successful! Thank you.
       </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="#successToast"></button>
     </div>
-  
-    <div class="spinner-border text-success" role="status">
-      <span class="sr-only">Loading...</span>
+  </div>
+
+  <div id="errorToast" class="toast hide ">
+    <div class="d-flex">
+      <div class="toast-body ">
+        Invalid Input, Please Check Your input.
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="#errorToast"
+        aria-label="Close"></button>
     </div>
-    <script>
-        $(document).ready(function () {
-          $("#proceedBtn").click(function () {
-            checkValidation()
-          });
-        });
-    
-    
-        $(".btn-close").click(function () {
-          $(".toast").hide();
-        });
-    
-    
-        function checkValidation() {
-          const inputs = [
-            "#name-input",
-            "#email-input",
-            "#address-input",
-            "#city-input",
-            "#country-input",
-            "#card-name-input",
-            "#card-number-input",
-            "#date-input",
-            "#ccv-input"
-          ];
-          let isValid = true;
+  </div>
 
-for (const input of inputs) {
-  if (!$(input)[0].validity.valid) {
-    isValid = false;
-    break;
-  }
-}
-
-if (isValid) {
-  $("#successToast").show();
-  $("#errorToast").hide();
-  $(".spinner-border").show();
-  $(".container").hide();
-
-  setTimeout(function () {
-    window.location.href = "main.html";
-  }, 1500)
-
-} else {
+  <div class="spinner-border text-success" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
 
 
-  $("#errorToast").show();
-  setTimeout(function () {
-    $("#errorToast").hide();
-  }, 3000)
+  <script>
+    $(document).ready(function () {
+      $("#proceedBtn").click(function () {
+        checkValidation()
+      });
+    });
 
-}
-}
-</script>
+
+    $(".btn-close").click(function () {
+      $(".toast").hide();
+    });
+
+
+    function checkValidation() {
+      const inputs = [
+        "#name-input",
+        "#email-input",
+        "#address-input",
+        "#city-input",
+        "#country-input",
+        "#card-name-input",
+        "#card-number-input",
+        "#date-input",
+        "#ccv-input"
+      ];
+
+      let isValid = true;
+
+      for (const input of inputs) {
+        if (!$(input)[0].validity.valid) {
+          isValid = false;
+          break;
+        }
+      }
+
+      if (isValid) {
+        $("#successToast").show();
+        $("#errorToast").hide();
+        $(".spinner-border").show();
+        $(".container").hide();
+
+        setTimeout(function () {
+          window.location.href = "main.html";
+        }, 1500)
+
+      } else {
+
+
+        $("#errorToast").show();
+        setTimeout(function () {
+          $("#errorToast").hide();
+        }, 3000)
+
+      }
+    }
+  </script>
 
 
 </body>
