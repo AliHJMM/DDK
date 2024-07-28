@@ -89,3 +89,6 @@ function generateOffers(products) {
   const bestOffersContainer = document.querySelector(
     ".best-offers.container .offers-container"
   );
+  const limitedOffersContainer = document.querySelector(
+    ".limited-offers.container .offers-container"
+  );
