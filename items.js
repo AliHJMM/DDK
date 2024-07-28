@@ -39,3 +39,24 @@ const bestOffers = [
       newPrice: "319.16",
     },
   ];
+
+  const clearanceSales = [
+    {
+      name: "Vintage Kitchen Cabinet Set",
+      imageSrc: "../../images/vintageca.jpeg",
+      oldPrice: "BHD943.26",
+      newPrice: "475.26",
+    },
+    {
+      name: "Stainless Steel Range Hood",
+      imageSrc: "../../images/rangehood.jpg",
+      oldPrice: "BHD339.58",
+      newPrice: "139.58",
+    },
+    {
+      name: "Transitional Dining room",
+      imageSrc: "../../images/transitionaldinig.webp",
+      oldPrice: "BHD1124.67",
+      newPrice: "924.67",
+    },
+  ];
