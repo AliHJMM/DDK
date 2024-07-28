@@ -112,3 +112,28 @@
     <div class="spinner-border text-success" role="status">
       <span class="sr-only">Loading...</span>
     </div>
+    <script>
+        $(document).ready(function () {
+          $("#proceedBtn").click(function () {
+            checkValidation()
+          });
+        });
+    
+    
+        $(".btn-close").click(function () {
+          $(".toast").hide();
+        });
+    
+    
+        function checkValidation() {
+          const inputs = [
+            "#name-input",
+            "#email-input",
+            "#address-input",
+            "#city-input",
+            "#country-input",
+            "#card-name-input",
+            "#card-number-input",
+            "#date-input",
+            "#ccv-input"
+          ];
